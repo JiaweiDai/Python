@@ -43,3 +43,4 @@ print("user name: %s, password: %s" % ("daijwei","daijwei"))
 # ASCII . ord("A")  chr(number)
 print(ord('a'))
 print(chr(65))
+
