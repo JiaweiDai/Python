@@ -44,3 +44,29 @@ print("user name: %s, password: %s" % ("daijwei","daijwei"))
 print(ord('a'))
 print(chr(65))
 
+#strip left space
+str0 = "   hello, Jeremy    "
+str1 = str0.lstrip()
+print(str1)
+
+#strip right space
+str2 = str0.rstrip()
+print(str2)
+
+#strip both space
+str3 = str0.strip()
+print(str3)
+
+#insert char
+str4 = "abcdefgh"
+print(",".join(str4))
+
+#make a count
+print("count of 'a': ", str4.count("a") )
+
+#catch where the char's place
+print("index of 'd': ", str4.find("d"))
+
+#replace cd with xy
+print("replace 'cd'; ", str4.replace("cd", "xy"))
+
