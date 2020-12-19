@@ -57,7 +57,7 @@ dict2.clear()
 print(dict2)
 print(dict1, '###', dict2, '###', dict3)
 
-# dict.fromkeys(seq) use the values in seq as key to create a dictionary
+# dict.fromkeys(seq) use the values in seq as key to create a dictionary, but remember use dict.fromkeys() not varname.fromkeys
 list0 = ["a", "b", "c", "d"]
 dict4 = dict.fromkeys(list0)
 print(dict4)
@@ -66,3 +66,48 @@ print(dict4)
 print(dict1.get(3))
 print(dict1.get(10,"Hello"))
 
+# dict.key in d to see if the key in this dictionary, return True/False.
+print(2 in dict1)
+
+# dict.items() return a new view object.!!!!!!!!!!!!!!!!!!!!!!
+print(dict1.items())
+dict5 = dict1.items()
+print(type(dict5))
+
+# dict.keys() return all the keys in a dictionary
+print(dict1.keys())
+
+# dict.values() return all the values in a dictionary
+print(dict1.values())
+
+# dict.setdefault(key, default=None) if the key is not in this dictionary, will add the key and set value as default and return the value.
+# If the key is there then return the value.
+print(dict1.setdefault(2))
+print(dict1.setdefault(1))
+print(dict1.setdefault(10, "hello"))
+
+# dict.update(dict2) it accept another dictionary object or something include a key-value pair(legth of two list/Tuple) iterable object.
+dict1.update(dict4)
+print(dict1) 
+dict1.update(F = "Acumen", H = "Lacus")
+print(dict1) 
+list1 = [('f', "Jeremy"),('q', "Ramos")]
+dict4.update(list1)
+print(dict4)
+tuple0 = ((1, "Nothing"),)
+dict4.update(tuple0)
+print(dict4)
+# if dict2's key already in dict , then the dict2's value will overwrite exisitng keys
+dict1.update(dict4)
+print(dict1) 
+
+# dict.pop(key[,defalut]) if key is in the dictionary, remove it and return its value, else return default. If default is not given
+# then raise a key Error
+#print(dict1.pop('y'))
+print(dict1.pop('y', "Hey"))
+print(dict1.pop('c'))
+
+# dict.popitem() remove a key-value pair and return them. Pairs are returned in LIFO(Last in First out) order.
+print(dict1.popitem())
+print(dict1.popitem())
+print(dict1)
