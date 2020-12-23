@@ -72,7 +72,7 @@ print(2 in dict1)
 # dict.items() return a new view object.!!!!!!!!!!!!!!!!!!!!!!
 print(dict1.items())
 dict5 = dict1.items()
-print(type(dict5))
+print("type of dict5 is ", type(dict5))
 
 # dict.keys() return all the keys in a dictionary
 print(dict1.keys())
