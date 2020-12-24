@@ -31,3 +31,6 @@ def test(a, b, methodx):
 methodx = input("Please enter something: ")
 methodx = eval(methodx)
 print(test(30, 20, methodx))
+
+
+
