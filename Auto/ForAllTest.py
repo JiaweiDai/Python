@@ -14,3 +14,4 @@ driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
 })
 #driver.get('https://www.rebatesme.com/')
 driver.get('https://www.baidu.com/')
+
